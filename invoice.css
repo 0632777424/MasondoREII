@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #fdfdfd;
+}
+
+.invoice-container {
+  width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.invoice-container::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: rgb(23, 0, 128);
+  margin-bottom: 10px;
+}
+
+.invoice-container::after {
+  content: "This document is intended for use by the addressees and is privileged and confidential. If the transmission has been misdirected to you, please contact us immediately. Thank you in advance!";
+  display: block;
+  background-color: rgb(23, 0, 128);
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+  margin-top: 30px;
+  font-style: italic;
+  text-align: center;
+}
+
+.invoice-title {
+  text-align: center;
+  color: rgb(23, 0, 128);
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+.company-info {
+  text-align: right;
+}
+
+.invoice-details {
+  background-color: #ffe6f0;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.invoice-number-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.invoice-paid-bar {
+  background-color: rgb(23, 0, 128);
+  color: white;
+  padding: 6px 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.billing-layout {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.invoice-to,
+.lease-details {
+  width: 48%;
+}
+
+.lease-details {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.payment-status {
+  margin-bottom: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.payment-details {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff8f0;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+th {
+  background-color: #ffe5b4;
+  font-weight: bold;
+  color: #333;
+}
+
+.outstanding-label {
+  color:rgb(23, 0, 128);
+  text-align: right;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.signature,
+.banking-details {
+  width: 45%;
+  font-size: 14px;
+}
